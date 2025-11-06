@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
+    <div class="container">
     <header>
       <h1>AI recipe generator</h1>
     </header>
@@ -16,13 +17,16 @@
           type="text"
           placeholder="Enter the dietary requirement of the recipe"
           autofocus
-          required
+          required autocomplete="off" class="instructions"
         />
-        <input type="submit" />
+        <input type="submit" class="submit-button" />
       </form>
-      <div>The recipe will go here</div>
+      <div class="recipe">The recipe will go here
+        <br />
+        And here
+      </div>
     </main>
-    <script src="src/index.js"></script>
+    
   </body>
   <footer>
     <p>
@@ -38,4 +42,6 @@
       >
     </p>
   </footer>
+  <script src="src/index.js"></script>
+  </div>
 </html>
