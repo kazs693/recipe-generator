@@ -2,47 +2,54 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
-    <title>AI recipe generator</title>
+    <title>AI Recipe Generator</title>
   </head>
   <body>
     <div class="container">
-    <header>
-      <h1>AI recipe generator</h1>
-    </header>
-    <main>
-      <form id="recipe-generator-form">
-        <input
-          type="text"
-          placeholder="Enter the dietary requirement of the recipe"
-          autofocus
-          required autocomplete="off" class="instructions"
-          id="user-instructions"
-        />
-        <input type="submit" class="submit-button" />
-      </form>
-      <div class="recipe" id="recipe">
-      </div>
-    </main>
-    
+      <header>
+        <h1>AI Recipe Generator</h1>
+      </header>
+      <main>
+        <div class="form-container">
+          <form id="recipe-generator-form">
+            <input
+              type="text"
+              placeholder="Enter the requirement/s of the recipe"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="example">
+            e.g. Enter the dietary requirement/s or main ingredient/s
+            e.g.'gluten-free and vegan' or 'mango salad'
+          </div>
+        </div>
+        <div class="recipe hidden" id="recipe"></div>
+      </main>
+
+      <footer>
+        <p>
+          This AI recipe project was coded by
+          <a href="https://github.com/kazs693" target="_blank">Karen Searle</a>
+          and is open-sourced on
+          <a href="https://github.com/kazs693/ops-challenge" target="_blank"
+            >GitHub</a
+          >
+          and hosted on
+          <a href="https://kaz-ai-recipe-generator.netlify.app/" target="_blank"
+            >Netlify</a
+          >
+        </p>
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
   </body>
-  <footer>
-    <p>
-      This AI recipe project was coded by
-      <a href="https://github.com/kazs693" target="_blank">Karen Searle</a>
-      and is open-sourced on
-      <a href="https://github.com/kazs693/ops-challenge" target="_blank"
-        >GitHub</a
-      >
-      and hosted on
-      <a href="https://kaz-ai-recipe-generator.netlify.app/" target="_blank"
-        >Netlify</a
-      >
-    </p>
-  </footer>
-  <script src="src/index.js"></script>
-  </div>
 </html>
