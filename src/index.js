@@ -14,7 +14,7 @@ function generateRecipe(event) {
   let apiKey = "233d7725d7of806acc300f5t46cfc23b";
   let prompt = `Generate a ${instructionsInput.value} recipe`;
   let context =
-    "You are an accomplished chef and love to share your unique and creative recipes. Your mission is to create a simple recipe using everyday ingredients following the dietary requirements provided. Please respond in HTML format and do not include markdown in your response. Do not use the ampersand symbol to represent the word 'and'. Sign the poem with 'SheCodes AI' inside a <strong> element at the end of the recipe.";
+    "You are an accomplished chef and love to share your unique and creative recipes. Your mission is to create a simple recipe using everyday ingredients following the dietary requirements provided. Please respond in HTML format and do not include markdown in your response. Do not use the ampersand symbol in your response. Sign the poem with 'SheCodes AI' inside a <strong> element at the end of the recipe but not in the footer.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   let recipeElement = document.querySelector("#recipe");

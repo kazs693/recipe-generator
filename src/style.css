@@ -1,6 +1,7 @@
 body {
-  background-color: #f9f7fe;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Shantell Sans", cursive;
+  background: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+  background-attachment: fixed;
 }
 
 .container {
@@ -9,7 +10,7 @@ body {
 }
 
 a {
-  color: #885df1;
+  color: rgb(241, 221, 241);
 }
 
 header {
@@ -19,9 +20,9 @@ header {
 h1 {
   text-align: center;
   font-weight: 800;
-  font-size: 36px;
+  font-size: 40px;
   line-height: 1.5;
-  color: #272044;
+  color: #9944fe;
 }
 
 .form-container {
@@ -38,9 +39,9 @@ form {
 
 .example {
   line-height: 1.5;
-  margin-top: 5px;
-  opacity: 0.6;
-  font-size: 12px;
+  margin-top: 10px;
+  opacity: 0.8;
+  font-size: 14px;
 }
 
 .instructions {
@@ -72,19 +73,28 @@ form {
 
 .submit-button {
   margin-left: 10px;
-  background: #885df1;
+  background: #9944fe;
   color: white;
   border: none;
   border-radius: 20px;
   padding: 14px 24px;
   width: 150px;
   font-size: 16px;
+  transition: all 200ms ease-in-out;
+}
+
+.submit-button:hover {
+  color: white;
+  background-color: #b8a3ee;
+  cursor: pointer;
+  border: 1px solid #885df1;
 }
 
 footer {
   text-align: center;
-  font-size: 13px;
+  font-size: 14px;
   margin-top: 30px;
+  color: antiquewhite;
 }
 
 .generating {
